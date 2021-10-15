@@ -1,46 +1,42 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <title>To-Do Application</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Ryan's To Do's</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-
-    <header>
-        <h1>Ryan's Todo App</h1>
-    </header>
-
-    <form>
-        <input type="text" class="todo-input">
+    <header>My DooDoo List 💩</header>
+    <div class="wrapper">
+        <!-- Input Section -->
+        <form>
+            <input type="text" id="input" class="todo-input" />
             <button class="todo-button" type="submit">
-                <i class="fas fa-plus-square"></i>
-            </button>
+          <i class="fa fa-plus-square"></i>
+        </button>
+            <!-- Filter Section -->
             <div class="select">
                 <select name="todos" class="filter-todo">
-                    <option value="all">All</option>
-                    <option value="completed">Completed</option>
-                    <option value="uncompleted">Uncompleted</option>
-                </select>
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+          </select>
             </div>
-    </form>
-
-    <div class="todo-container">
-        <ul class="todo-list"></ul>
+        </form>
+        <!-- To Do Section -->
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
+        </div>
     </div>
-    
-
-    <!-- Simulate this in JS
-    <div class="todo">
-        <li>Clean my room</li>
-        <button>checked</button>
-        <button>delete</button>
-    </div> -->
-
-
-    <script src="app.js"></script>
 </body>
+<script src="./app.js"></script>
+
 </html>
